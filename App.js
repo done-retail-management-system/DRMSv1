@@ -18,13 +18,7 @@ import {
 
 
 
-import {
-  Login,
- // LearnMoreLinks,
-  //Colors,
- // DebugInstructions,
-// ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import Login from './source/pages/Login';
 
 
 
