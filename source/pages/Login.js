@@ -9,12 +9,13 @@ import {
   StatusBar,
 } from 'react-native';
 
+import Logo from'../components/Logo';
 
 
 const Login = () => {
   return (
    	 <View style = {styles.container}>
-   	 	<Text>Login text</Text>
+   	 	<Logo/>
    	 </View>
   );
 };
