@@ -1,5 +1,4 @@
-//import React from 'react';
-import React, {Fragment} from 'react';
+import React, {Component} from 'react';
 import {
   //SafeAreaView,
   StyleSheet,
@@ -7,23 +6,34 @@ import {
   View,
   Text,
   StatusBar,
+  TouchableOpacity,
 } from 'react-native';
 
 import Logo from'../components/Logo';
 import Form from'../components/Form';
 
-const Login = () => {
-  return (
-   	 <View style = {styles.container}>
-   	 	<Logo/>
-      <Form/>
+import {Actions} from 'react-native-router-flux';
+
+export default class Login extends Component<{}>{
+  render()
+  {
+    return (
+     <View style = {styles.container}>
+     <Logo/>
+      <Form type = "Login"/>
         <View style = {styles.forgotPass}>
             <Text style={styles.forgotText}>Forgot Sign In Details? </Text>
-            <Text style = {styles.link}>Click Here</Text>
+            <TouchableOpacity onPress={this.forgot}><Text style = {styles.link}>Click Here</Text></TouchableOpacity>
         </View>
-   	 </View>
-  );
-};
+     </View>
+  )
+  }
+
+  forgot()
+  {
+    Actions.forgot_password();
+  }
+}
 
 const styles = StyleSheet.create({
   container : {
@@ -51,4 +61,5 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Login;
+//export default Login;
+//export default forgot;

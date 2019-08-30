@@ -1,12 +1,5 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
 
-import React, {Fragment} from 'react';
+import React, {Component} from 'react';
 import {
   //SafeAreaView,
   StyleSheet,
@@ -18,19 +11,21 @@ import {
 
 
 
-import Login from './source/pages/Login';
+import Routes from './source/Routes';
+
+
 //import Forgot from './source/pages/Forgot';
 
-
-const App = () => {
-  return (
-    <View style={styles.container}>
-    <StatusBar backgroundColor="#c7c7c7" barStyle="light-content" />
-    <Login/>
-    </View>
-    
-  );
-};
+export default class App extends Component<{}>{
+  render(){
+    return (
+      <View style={styles.container}>
+        <StatusBar backgroundColor="#c7c7c7" barStyle="light-content" />
+        <Routes/>
+      </View> 
+  )
+  }  
+}
 
 const styles = StyleSheet.create({
   container : {
@@ -42,4 +37,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default App;
+//export default App;

@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Component} from 'react';
 import {
   //SafeAreaView,
   StyleSheet,
@@ -10,10 +10,11 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const Logo = () => {
-  return (
-  	<View style = {styles.container}>
-	     <TextInput style={styles.inputBox}
+export default class Form extends Component<{}>{
+  render(){
+    return (
+    <View style = {styles.container}>
+       <TextInput style={styles.inputBox}
          underlineColorAndriod='#c7c7c7'
          placeholder="Username" 
          placeholderTextColor = "black"
@@ -29,9 +30,10 @@ const Logo = () => {
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>SIGN IN</Text>
         </TouchableOpacity>
-	  </View>
-  );
-};
+    </View>
+  )
+  }  
+}
 
 const styles = StyleSheet.create({
   container : {
@@ -66,4 +68,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Logo;
+//export default Logo;

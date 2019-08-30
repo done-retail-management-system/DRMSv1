@@ -1,5 +1,5 @@
 //import React from 'react';
-import React, {Fragment} from 'react';
+import React, {Component} from 'react';
 import {
   //SafeAreaView,
   StyleSheet,
@@ -12,18 +12,31 @@ import {
 import Logo from'../components/Logo';
 import Form from'../components/Form';
 
-const Forgot = () => {
-  return (
-   	 <View style = {styles.container}>
-   	 	<Logo/>
-      <Form />
+export default class Forgot extends Component<{}>{
+  render(){
+      return (
+     <View style = {styles.container}>
+      <Logo/>
+      <TextInput style={styles.inputBox}
+         underlineColorAndriod='#c7c7c7'
+         placeholder="Username" 
+         placeholderTextColor = "black"
+         />
+
+        <TextInput style={styles.inputBox} 
+          underlineColorAndriod='#c7c7c7'
+          placeholder="Passphrase" 
+          placeholderTextColor = "black"
+          secureTextEntry={true}
+          />
         <View style = {styles.forgotPass}>
-            <Text style={styles.forgotText}>Forgot Sign In Details? </Text>
+            <Text style={styles.forgotText}>Forgot Sign In Details? f1im here</Text>
             <Text style = {styles.link}>Click Here</Text>
         </View>
-   	 </View>
-  );
-};
+     </View>
+  )
+  }
+}
 
 const styles = StyleSheet.create({
   container : {
@@ -51,4 +64,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Login;
+//export default Forgot;
