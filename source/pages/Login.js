@@ -17,6 +17,9 @@ const Login = () => {
    	 <View style = {styles.container}>
    	 	<Logo/>
       <Form/>
+        <View style = {styles.forgotText}>
+            <Text>Forgot Sign In Details? Click Here </Text>
+        </View>
    	 </View>
   );
 };
@@ -24,6 +27,12 @@ const Login = () => {
 const styles = StyleSheet.create({
   container : {
     backgroundColor: '#fafafa',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  forgotText: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
