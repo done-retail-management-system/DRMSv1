@@ -10,12 +10,13 @@ import {
 } from 'react-native';
 
 import Logo from'../components/Logo';
-
+import Form from'../components/Form';
 
 const Login = () => {
   return (
    	 <View style = {styles.container}>
    	 	<Logo/>
+      <Form/>
    	 </View>
   );
 };
@@ -23,7 +24,7 @@ const Login = () => {
 const styles = StyleSheet.create({
   container : {
     backgroundColor: '#fafafa',
-    flex: 1, flexDirection: 'row',
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   }
