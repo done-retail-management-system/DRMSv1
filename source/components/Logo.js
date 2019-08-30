@@ -11,7 +11,7 @@ import {
 const Logo = () => {
   return (
   	<View style = {styles.container}>
-	 <Image style={{width:100, height:100}} source={require('./logo.png')}/>
+	 <Image style={{width:150, height:150}} source={require('./logo.png')}/>
 	 <Text style = {styles.logoText}>Welcome to Done Retail</Text>
 	</View>
   );

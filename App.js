@@ -19,7 +19,7 @@ import {
 
 
 import Login from './source/pages/Login';
-
+//import Forgot from './source/pages/Forgot';
 
 
 const App = () => {

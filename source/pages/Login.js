@@ -17,8 +17,9 @@ const Login = () => {
    	 <View style = {styles.container}>
    	 	<Logo/>
       <Form/>
-        <View style = {styles.forgotText}>
-            <Text>Forgot Sign In Details? Click Here </Text>
+        <View style = {styles.forgotPass}>
+            <Text style={styles.forgotText}>Forgot Sign In Details? </Text>
+            <Text style = {styles.link}>Click Here</Text>
         </View>
    	 </View>
   );
@@ -32,10 +33,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  forgotText: {
-    flex: 1,
+  forgotPass: {
+    flexGrow: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row',
+  },
+
+  forgotText:{
+    fontSize: 16
+  },
+
+  link:{
+    fontSize: 16,
+    color: '#FC3D39',
+    fontWeight: 'bold'
   }
 });
 

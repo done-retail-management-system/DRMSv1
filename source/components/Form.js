@@ -13,8 +13,18 @@ import {
 const Logo = () => {
   return (
   	<View style = {styles.container}>
-	     <TextInput style={styles.inputBox} underlineColorAndriod='#c7c7c7' placeholder="Username" placeholderTextColor = "black"/>
-        <TextInput style={styles.inputBox} underlineColorAndriod='#c7c7c7' placeholder="Passphrase" placeholderTextColor = "black"/>
+	     <TextInput style={styles.inputBox}
+         underlineColorAndriod='#c7c7c7'
+         placeholder="Username" 
+         placeholderTextColor = "black"
+         />
+
+        <TextInput style={styles.inputBox} 
+          underlineColorAndriod='#c7c7c7'
+          placeholder="Passphrase" 
+          placeholderTextColor = "black"
+          secureTextEntry={true}
+          />
         
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>SIGN IN</Text>
